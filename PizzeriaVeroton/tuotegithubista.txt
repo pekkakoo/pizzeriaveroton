@@ -3,3 +3,5 @@ Meneeko githubiin
 GitHubissa on!
 
 Tehdään rebase localissa
+
+Luotu uusi workspace ja tuotu projekti githubista
