@@ -1,3 +1,5 @@
-Meneek� githubiin
+Meneeko githubiin
 
 GitHubissa on!
+
+Tehdään rebase localissa
