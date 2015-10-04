@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_bMxsYGm9EeW0IbtZPaPwHw" name="NewModel">
+  <packageImport xmi:id="_W7j1MGnFEeW0IbtZPaPwHw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_vZoAMGm9EeW0IbtZPaPwHw" name="Asiakas">
+    <ownedAttribute xmi:id="_0fUusGm9EeW0IbtZPaPwHw" name="id"/>
+    <ownedAttribute xmi:id="_8_62wGm9EeW0IbtZPaPwHw" name="etunimi">
+      <defaultValue xmi:type="uml:StringExpression" xmi:id="_ESDnoGm-EeW0IbtZPaPwHw"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="_AUDhAGm-EeW0IbtZPaPwHw" name="sukunimi"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_aHmXkGm-EeW0IbtZPaPwHw" name="Pizza"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_bvCPcGm-EeW0IbtZPaPwHw" name="Tilaus">
+    <packageImport xmi:id="_UsumIGnFEeW0IbtZPaPwHw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <ownedAttribute xmi:id="_HQ56MGnFEeW0IbtZPaPwHw" name="Vastaanottoaika">
+      <nameExpression xmi:id="_O7r0kGnFEeW0IbtZPaPwHw"/>
+      <defaultValue xmi:type="uml:TimeExpression" xmi:id="_JZ18oGnFEeW0IbtZPaPwHw"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_guqLIGm-EeW0IbtZPaPwHw" name="Alamenu"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_ifPX8Gm-EeW0IbtZPaPwHw" name="Ainesosa"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_pYaPMGm-EeW0IbtZPaPwHw" name="PizzanAine"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_IUiJIGm_EeW0IbtZPaPwHw" name="Pizzat menussa" memberEnd="_IUj-UGm_EeW0IbtZPaPwHw _IVB4YGm_EeW0IbtZPaPwHw" navigableOwnedEnd="_IUj-UGm_EeW0IbtZPaPwHw _IVB4YGm_EeW0IbtZPaPwHw">
+    <ownedEnd xmi:id="_IUj-UGm_EeW0IbtZPaPwHw" name="1" visibility="private" type="_aHmXkGm-EeW0IbtZPaPwHw" association="_IUiJIGm_EeW0IbtZPaPwHw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IVAqQGm_EeW0IbtZPaPwHw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IVBRUGm_EeW0IbtZPaPwHw"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_IVB4YGm_EeW0IbtZPaPwHw" type="_guqLIGm-EeW0IbtZPaPwHw" association="_IUiJIGm_EeW0IbtZPaPwHw">
+      <name xsi:nil="true"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_IVa58Gm_EeW0IbtZPaPwHw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_IVa58Wm_EeW0IbtZPaPwHw"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_5VDcoGm_EeW0IbtZPaPwHw" name="Menujen menu"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_hjc9wGnBEeW0IbtZPaPwHw" name="tekee" memberEnd="_hjdk0GnBEeW0IbtZPaPwHw _hjey8WnBEeW0IbtZPaPwHw" navigableOwnedEnd="_hjey8WnBEeW0IbtZPaPwHw">
+    <ownedEnd xmi:id="_hjdk0GnBEeW0IbtZPaPwHw" name="asiakass" type="_vZoAMGm9EeW0IbtZPaPwHw" aggregation="shared" association="_hjc9wGnBEeW0IbtZPaPwHw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hjeL4GnBEeW0IbtZPaPwHw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hjey8GnBEeW0IbtZPaPwHw" value="1"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_hjey8WnBEeW0IbtZPaPwHw" name="tilaus" type="_bvCPcGm-EeW0IbtZPaPwHw" association="_hjc9wGnBEeW0IbtZPaPwHw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hjgBEGnBEeW0IbtZPaPwHw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_hjgBEWnBEeW0IbtZPaPwHw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_RQ3qoGnCEeW0IbtZPaPwHw" name="Pizzoja kuuluu tilaukseen" memberEnd="_RQ5f0GnCEeW0IbtZPaPwHw _RQ78EGnCEeW0IbtZPaPwHw" navigableOwnedEnd="_RQ5f0GnCEeW0IbtZPaPwHw _RQ78EGnCEeW0IbtZPaPwHw">
+    <ownedEnd xmi:id="_RQ5f0GnCEeW0IbtZPaPwHw" name="pizzas" type="_aHmXkGm-EeW0IbtZPaPwHw" association="_RQ3qoGnCEeW0IbtZPaPwHw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RQ6t8GnCEeW0IbtZPaPwHw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RQ7VAGnCEeW0IbtZPaPwHw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_RQ78EGnCEeW0IbtZPaPwHw" name="tilauss" type="_bvCPcGm-EeW0IbtZPaPwHw" association="_RQ3qoGnCEeW0IbtZPaPwHw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_RQ8jIGnCEeW0IbtZPaPwHw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_RQ9KMGnCEeW0IbtZPaPwHw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:AssociationClass" xmi:id="_2bKXAGnCEeW0IbtZPaPwHw" name="AssociationClass1" memberEnd="_2bNaUGnCEeW0IbtZPaPwHw _2bqtUGnCEeW0IbtZPaPwHw" navigableOwnedEnd="_2bNaUGnCEeW0IbtZPaPwHw _2bqtUGnCEeW0IbtZPaPwHw">
+    <ownedEnd xmi:id="_2bNaUGnCEeW0IbtZPaPwHw" name="tilauksen pizzas" association="_2bKXAGnCEeW0IbtZPaPwHw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2bqGQGnCEeW0IbtZPaPwHw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2bqGQWnCEeW0IbtZPaPwHw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_2bqtUGnCEeW0IbtZPaPwHw" name="pizzoja kuuluu tilaukseens" type="_RQ3qoGnCEeW0IbtZPaPwHw" association="_2bKXAGnCEeW0IbtZPaPwHw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2cDH0GnCEeW0IbtZPaPwHw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2cDH0WnCEeW0IbtZPaPwHw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4wXeYGnDEeW0IbtZPaPwHw" memberEnd="_4wZTkGnDEeW0IbtZPaPwHw _4wcW4WnDEeW0IbtZPaPwHw" navigableOwnedEnd="_4wZTkGnDEeW0IbtZPaPwHw _4wcW4WnDEeW0IbtZPaPwHw">
+    <ownedEnd xmi:id="_4wZTkGnDEeW0IbtZPaPwHw" name="pizzas" type="_aHmXkGm-EeW0IbtZPaPwHw" association="_4wXeYGnDEeW0IbtZPaPwHw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4wbIwGnDEeW0IbtZPaPwHw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4wcW4GnDEeW0IbtZPaPwHw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_4wcW4WnDEeW0IbtZPaPwHw" name="ainesosas" type="_ifPX8Gm-EeW0IbtZPaPwHw" association="_4wXeYGnDEeW0IbtZPaPwHw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4wdlAGnDEeW0IbtZPaPwHw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4weMEGnDEeW0IbtZPaPwHw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_86FFwGnDEeW0IbtZPaPwHw" name="Alamenu kuuluu ylämenuuhun" memberEnd="_86HiAGnDEeW0IbtZPaPwHw _86J-QGnDEeW0IbtZPaPwHw" navigableOwnedEnd="_86HiAGnDEeW0IbtZPaPwHw _86J-QGnDEeW0IbtZPaPwHw">
+    <ownedEnd xmi:id="_86HiAGnDEeW0IbtZPaPwHw" name="pizzamenus" type="_guqLIGm-EeW0IbtZPaPwHw" association="_86FFwGnDEeW0IbtZPaPwHw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_86JXMGnDEeW0IbtZPaPwHw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_86JXMWnDEeW0IbtZPaPwHw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_86J-QGnDEeW0IbtZPaPwHw" name="menujen menus" type="_5VDcoGm_EeW0IbtZPaPwHw" association="_86FFwGnDEeW0IbtZPaPwHw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_86KlUGnDEeW0IbtZPaPwHw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_86LMYGnDEeW0IbtZPaPwHw" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_bni4oGnEEeW0IbtZPaPwHw" name="Asiakas lukee menua" memberEnd="_bnkGwGnEEeW0IbtZPaPwHw _bnnxIGnEEeW0IbtZPaPwHw" navigableOwnedEnd="_bnkGwGnEEeW0IbtZPaPwHw _bnnxIGnEEeW0IbtZPaPwHw">
+    <ownedEnd xmi:id="_bnkGwGnEEeW0IbtZPaPwHw" name="asiakass" type="_vZoAMGm9EeW0IbtZPaPwHw" association="_bni4oGnEEeW0IbtZPaPwHw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bnmjAGnEEeW0IbtZPaPwHw"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bnnKEGnEEeW0IbtZPaPwHw" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_bnnxIGnEEeW0IbtZPaPwHw" name="menujen menus" type="_5VDcoGm_EeW0IbtZPaPwHw" association="_bni4oGnEEeW0IbtZPaPwHw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_bnpmUGnEEeW0IbtZPaPwHw" value="1"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_bnqNYGnEEeW0IbtZPaPwHw" value="1"/>
+    </ownedEnd>
+  </packagedElement>
+</uml:Model>
