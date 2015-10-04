@@ -5,3 +5,5 @@ GitHubissa on!
 Tehdään rebase localissa
 
 Luotu uusi workspace ja tuotu projekti githubista
+
+Viety Githubiin pekkak:n oma versio
